@@ -160,6 +160,115 @@ img {
   position: relative;
   left: -15%;
 }
+/* --perks-- */
+.perks {
+  background-image: url("./images/circle-bg.png"), url("./images/dots.png"), url("./images/waves-m.png");
+  background-repeat: no-repeat;
+  background-position: left 0px, -54px bottom, right 85%;
+  background-size: 70px, 170px, 120px;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+.perks .container {
+  max-width: 440px;
+}
+.perks .section__title {
+  text-align: center;
+  margin: 0 0 1em;
+}
+.perks__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.perk__card {
+  text-align: center;
+  max-width: 160px;
+  margin-bottom: 32px;
+}
+
+.perk__card__icon {
+  text-align: center;
+}
+.perk__card__icon img {
+  max-width: 80px;
+}
+.perk__card__title {
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin: 18px 0;
+}
+.perk__card__subtitle {
+  font-size: 12px;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.perk__card__list {
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0;
+}
+.perk__card__list li:before {
+  content: "";
+  display: inline-block;
+  margin-left: -8px;
+}
+.perk__card__list li {
+  font-size: 12px;
+  margin: 0;
+}
+.perk__card__list li::marker {
+  margin-right: 8px;
+  margin-inline-end: 8px;
+}
+/* --How it works-- */
+.works {
+}
+.works .container {
+  padding: 0;
+}
+.works__wrapper {
+  margin: 16px;
+  padding: 26px 24px 32px;
+  background-color: #b8e1e1;
+  border-radius: 24px;
+}
+.works__image {
+  font-size: 0;
+}
+.works__image img {
+  border-radius: 24px;
+  border: 4px solid white;
+}
+.works .section__title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.works__cta {
+  text-align: center;
+}
+.works__cta a.primary__btn {
+  min-width: 180px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+/* --VIP-- */
+.vip {
+  background-color: #f6cad9;
+  margin: 84px 0 0;
+  padding-bottom: 16px;
+}
+.vip__image {
+  position: relative;
+  top: -40px;
+}
+.vip__content {
+  margin-top: -48px;
+}
 
 /* --Desktop styles-- */
 
@@ -220,7 +329,7 @@ img {
   }
   .what .container {
     max-width: 980px;
-    padding: 64px 16px;
+    padding: 64px 16px 42px;
   }
   .what__wrapper {
     display: flex;
@@ -231,5 +340,127 @@ img {
   }
   .what__wrapper > div {
     width: 70%;
+  }
+  /* --perks-- */
+  .perks {
+    background-image: url("./images/circle-bg.png"), url("./images/dots.png"), url("./images/waves-d.png");
+    background-size: 100px, 216px;
+    padding-bottom: 230px;
+    background-position: left 0px, 0px bottom, right 85%;
+  }
+  .perks .section__title {
+    margin-bottom: 1.4em;
+  }
+  .perks .container {
+    max-width: 1164px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .perks .section__title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .perks__cards {
+    justify-content: space-between;
+  }
+  .perk__card {
+    max-width: 200px;
+  }
+  .order-1-d {
+    order: 1;
+  }
+  .order-2-d {
+    order: 2;
+  }
+  .order-3-d {
+    order: 3;
+  }
+  .order-4-d {
+    order: 4;
+  }
+  .order-5-d {
+    order: 5;
+  }
+  .perk__card__icon img {
+    max-width: 100px;
+  }
+  .perk__card__title {
+    font-size: 22px;
+    margin-top: 28px;
+  }
+  .perk__card .perk__card__subtitle {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .perk__card__list li {
+    font-size: 15px;
+  }
+  /* --How it works-- */
+  .works {
+    margin-top: -200px;
+  }
+  .works__wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .works__image {
+    max-width: 46%;
+  }
+  .works__image img {
+    border-width: 6px;
+  }
+  .works__content {
+    max-width: 46%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .works .section__title {
+    text-align: left;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .works .section__subtitle {
+    max-width: 460px;
+  }
+  .works .works__cta {
+    text-align: left;
+  }
+  /* --VIP-- */
+  .vip {
+    margin: 100px 0 60px;
+    padding-bottom: 0;
+  }
+  .vip .container {
+    min-height: 215px;
+    padding-top: 24px;
+  }
+  .vip__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .vip__wrapper > div {
+    width: 50%;
+  }
+  .vip__content {
+    margin-left: -100px;
+    z-index: 2;
+  }
+  .vip__image {
+    top: -60px;
+    margin-bottom: -104px;
+  }
+  .vip .section__title {
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .vip .section__subtitle {
+    margin-bottom: 0;
+  }
+  .vip .section__title span {
+    display: none;
   }
 }
