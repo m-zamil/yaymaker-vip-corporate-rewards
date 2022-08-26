@@ -198,7 +198,6 @@ img {
   font-size: 16px;
   letter-spacing: 2px;
   margin: 18px 0;
-  text-transform: uppercase;
 }
 .perk__card__subtitle {
   font-size: 12px;
@@ -225,8 +224,6 @@ img {
   margin-inline-end: 8px;
 }
 /* --How it works-- */
-.works {
-}
 .works .container {
   padding: 0;
 }
@@ -351,6 +348,7 @@ img {
   }
   .perks .section__title {
     margin-bottom: 1.4em;
+    max-width: 100%;
   }
   .perks .container {
     max-width: 1164px;
