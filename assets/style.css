@@ -218,6 +218,7 @@ img {
 .perk__card__list li {
   font-size: 12px;
   margin: 0;
+  font-weight: 400;
 }
 .perk__card__list li::marker {
   margin-right: 8px;
